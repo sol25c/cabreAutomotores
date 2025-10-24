@@ -15,7 +15,7 @@
     padding: 0;
     box-sizing: border-box;
     /* Unificación de fuentes */
-    font-family: 'Poppins', 'Raleway', 'Montserrat', sans-serif; 
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 body {
@@ -113,12 +113,22 @@ nav a, .nav a {
     text-transform: uppercase;
     font-size: 0.9em;
 }
-nav a:hover,
-nav a.active,
-.nav a:hover,
-.nav a.active {
-    color: var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
+/* Estado hover y activo en navegación */
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Al pasar el mouse */
+nav a:hover {
+  color: #dcdcdc; /* gris claro */
+}
+
+/* Link activo (página actual) */
+nav a.active {
+  color: #f2f2f2; /* blanco suave más brillante */
+  font-weight: 800;
 }
 
 /* ====================================
@@ -172,21 +182,43 @@ nav a.active,
   right: 20px;
 }
 /* BENEFICIOS (Garantía, Multimarcas) */
+/* BENEFICIOS (Garantía, Multimarcas) */
 .benefits {
-    background: #eee;
-    padding: 20px 0;
+  background: #eee;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
 }
+
 .benefit {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 0; 
+  display: flex;
+  align-items: center;
+  gap: 15px; /* más espacio entre ícono y texto */
+  padding: 10px 20px;
+  max-width: 350px;
 }
+
 .benefit .icon {
-    font-size: 24px;
-    color: var(--primary-color);
-    min-width: 24px;
+  font-size: 40px; /* ícono más grande */
+  color: var(--primary-color);
+  flex-shrink: 0;
+  line-height: 1;
 }
+
+.benefit h3 {
+  font-size: 1.4em;
+  margin-bottom: 5px;
+  color: var(--secondary-color);
+}
+
+.benefit p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95em;
+}
+
 
 /* AUTOS DESTACADOS */
 .vehicles {
