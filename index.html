@@ -29,11 +29,20 @@
     </header>
 <section class="slider">
   <div class="slider-images">
-    <img src="img/auto1.jpg" alt="Auto 1" class="active" />
-    <img src="img/auto2.jpg" alt="Auto 2" />
+    <img src="img/slider.jpg" alt="Auto 1" class="active" />
+    <img src="img/slider1.jpg" alt="Auto 2" />
+    <img src="img/slider2.jpg" alt="Auto 3" />
+    <!-- Agrega más imágenes si quieres -->
   </div>
-  <button class="prev" id="button-prev">&#10094;</button>
-  <button class="next" id="button-next">&#10095;</button>
+
+  <button class="prev" aria-label="Imagen anterior">◄</button>
+  <button class="next" aria-label="Siguiente imagen">►</button>
+
+  <!-- Puntos indicadores (opcional) -->
+  <div class="dots">
+    <span class="dot active" data-index="0"></span>
+    <span class="dot" data-index="1"></span>
+  </div>
 </section>
 
     <section class="benefits d-flex justify-content-around py-4">
@@ -167,6 +176,45 @@
         <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
     </div>
   </footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".slider-images img");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+    const dots = document.querySelectorAll(".dot");
+    let currentIndex = 0;
+
+    function showImage(index) {
+      images.forEach((img, i) => img.classList.toggle("active", i === index));
+      dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+    }
+
+    nextBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    });
+
+    prevBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+    });
+
+    // Clic en puntos
+    dots.forEach((dot) => {
+      dot.addEventListener("click", () => {
+        currentIndex = parseInt(dot.dataset.index);
+        showImage(currentIndex);
+      });
+    });
+
+    // Autoavance
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    }, 5000);
+  });
+</script>
 </body>
 </html>
 
