@@ -17,7 +17,12 @@
 
     <header>
       <div class="logo">CABRÉ</div>
-      <nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="mainNav" class="main-nav">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="quienes_somos.html">Quienes Somos</a></li>
@@ -28,137 +33,40 @@
     </header>
 
     <main>
-        
+        <section id="listado-vehiculos" class="vehicles container my-5">
+            <h3 class="text-center mb-4">Nuestros vehículos</h3>
+            <div class="card-wrapper">
+                <!-- Las tarjetas se generan dinámicamente desde js/vehiculos.js -->
+            </div>
+        </section>
 
-<body>
-    <section class="vehicles container my-5">
-  <h3 class="text-center mb-4">Nuestros vehículos</h3>
-
-  <div class="card-wrapper">
-    <!-- 9 tarjetas, 3 por fila -->
-    <div class="vehicle-card">
-    <a href="descripcion_vehiculo.html">
-      <img src="img/vw-polo.jpeg" alt="Volkswagen Polo">
-      <div class="vehicle-info">
-        <h4>Volkswagen Polo</h4>
-        <span class="year">2023</span>
-        <p>Color: Azul</p>
-        <p>Usado</p>
-      </div>
-    </a>
-  </div>
-
-    <div class="vehicle-card">
-    <a href="descripcion_vehiculo.html">
-      <img src="img/vw-polo.jpeg" alt="Volkswagen Polo">
-      <div class="vehicle-info">
-        <h4>Volkswagen Polo</h4>
-        <span class="year">2023</span>
-        <p>Color: Azul</p>
-        <p>Usado</p>
-      </div>
-    </a>
-  </div>
-
-   <div class="vehicle-card">
-    <a href="descripcion_vehiculo.html">
-      <img src="img/vw-polo.jpeg" alt="Volkswagen Polo">
-      <div class="vehicle-info">
-        <h4>Volkswagen Polo</h4>
-        <span class="year">2023</span>
-        <p>Color: Azul</p>
-        <p>Usado</p>
-      </div>
-    </a>
-  </div>
-
-      <div class="vehicle-card">
-    <a href="descripcion_vehiculo.html">
-      <img src="img/vw-polo.jpeg" alt="Volkswagen Polo">
-      <div class="vehicle-info">
-        <h4>Volkswagen Polo</h4>
-        <span class="year">2023</span>
-        <p>Color: Azul</p>
-        <p>Usado</p>
-      </div>
-    </a>
-  </div>
-
-     <div class="vehicle-card">
-    <a href="descripcion_vehiculo.html">
-      <img src="img/vw-polo.jpeg" alt="Volkswagen Polo">
-      <div class="vehicle-info">
-        <h4>Volkswagen Polo</h4>
-        <span class="year">2023</span>
-        <p>Color: Azul</p>
-        <p>Usado</p>
-      </div>
-    </a>
-  </div>
-
-    <div class="vehicle-card">
-    <a href="descripcion_vehiculo.html">
-      <img src="img/vw-polo.jpeg" alt="Volkswagen Polo">
-      <div class="vehicle-info">
-        <h4>Volkswagen Polo</h4>
-        <span class="year">2023</span>
-        <p>Color: Azul</p>
-        <p>Usado</p>
-      </div>
-    </a>
-  </div>
-
-   <div class="vehicle-card">
-    <a href="descripcion_vehiculo.html">
-      <img src="img/vw-polo.jpeg" alt="Volkswagen Polo">
-      <div class="vehicle-info">
-        <h4>Volkswagen Polo</h4>
-        <span class="year">2023</span>
-        <p>Color: Azul</p>
-        <p>Usado</p>
-      </div>
-    </a>
-  </div>
-
-  <div class="vehicle-card">
-    <a href="descripcion_vehiculo.html">
-      <img src="img/vw-polo.jpeg" alt="Volkswagen Polo">
-      <div class="vehicle-info">
-        <h4>Volkswagen Polo</h4>
-        <span class="year">2023</span>
-        <p>Color: Azul</p>
-        <p>Usado</p>
-      </div>
-    </a>
-  </div>
-
-      <div class="vehicle-card">
-    <a href="descripcion_vehiculo.html">
-      <img src="img/vw-polo.jpeg" alt="Volkswagen Polo">
-      <div class="vehicle-info">
-        <h4>Volkswagen Polo</h4>
-        <span class="year">2023</span>
-        <p>Color: Azul</p>
-        <p>Usado</p>
-      </div>
-    </a>
-  </div>
-  </div>
-</section>
-
+        <section id="detalle-vehiculo" class="container my-5" style="display:none;">
+            <a href="#" id="btn-volver" class="btn btn-secondary">← Volver al listado</a>
+            <div class="detalle-wrapper">
+                <h2 id="detalle-titulo"></h2>
+                <img id="detalle-imagen" src="" alt="" style="max-width:100%;height:auto;">
+                <div id="detalle-datos" class="detalle-datos"></div>
+                <p>
+                    <a id="btn-consultar" class="btn btn-success" target="_blank" rel="noopener">Consultar</a>
+                    <a id="btn-info-ml" class="btn btn-info" target="_blank" rel="noopener">Más info</a>
+                </p>
+            </div>
+        </section>
 
     </main>
 
  <footer>
-    <p>©2025 Cabré Automotores. Todos los derechos reservados.</p>
-    <p>Términos y condiciones</p>
-    <div class="social">
-        <a href="https://www.instagram.com/cabre.automotores/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-<!--         <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a> -->
-        <a href="https://www.facebook.com/share/1KCPdQcg6M/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
-    </div>
-  </footer>
+    <p>©2025 Cabré Automotores. Todos los derechos reservados.</p>
+    <p>Términos y condiciones</p>
+    <div class="social">
+        <a href="https://www.instagram.com/cabre.automotores/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+<!--         <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a> -->
+        <a href="https://www.facebook.com/share/1KCPdQcg6M/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+    </div>
+    </footer>
     
+    <script src="js/menu.js"></script>
+    <script src="js/vehiculos.js"></script>
 </body>
 </html>
