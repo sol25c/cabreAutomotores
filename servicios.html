@@ -15,27 +15,32 @@
 </head>
 <body>
 
-    <header>
-      <div class="logo">CABRÉ</div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="quienes_somos.html">Quienes Somos</a></li>
-          <li><a href="servicios.html" class="active">Servicios</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+        <header>
+            <div class="logo">CABRÉ</div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="mainNav" class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes_somos.html">Quienes Somos</a></li>
+                    <li><a href="servicios.html" class="active">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
 
     <main>
        
         
-        <section class="servicios-banner">
-            <div class="banner-overlay">
-                <h1>Nuestros Servicios</h1>
-                <p>Te ofrecemos soluciones completas para la compra, venta y gestión de tu vehículo.</p>
-            </div>
-        </section>
+    <section class="content-section">
+    <div class="container">
+        <h1 class="main-title no-banner">Nuestros Servicios</h1>
+    </div>
+</section>
+
 
         <section class="services-list container">
     
@@ -87,6 +92,8 @@
         <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
     </div>
   </footer>
-    
 </body>
 </html>
+        <script src="js/menu.js"></script>
+    </body>
+    </html>

@@ -2,7 +2,7 @@
  * 1. VARIABLES Y ESTILOS GLOBALES
  * ==================================== */
 :root {
-    --primary-color: #ca0000; /* ROJO UNIFICADO */
+    --primary-color: #ca0000; 
     --secondary-color: #000;
     --text-light: #fff;
     --text-dark: #333;
@@ -10,7 +10,6 @@
 }
 
 * {
-    /* Reseteo universal para eliminar márgenes predeterminados */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,12 +21,11 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     background-color: #fff;
-    /* CORRECCIÓN CRÍTICA: Elimina el margen superior del cuerpo de la página */
     margin: 0; 
     padding: 0;
 }
 
-/* --- SOLUCIÓN HEADER/SLIDER: Eliminar margen de MAIN (si existe) --- */
+
 main {
     margin-top: 0;
     padding-top: 0;
@@ -41,14 +39,12 @@ main {
 
 /* --- ESTILOS GENERALES --- */
 
-/* 1. Colocar H3 en bold y reducir el margen inferior */
+
 h3 {
     font-weight: bold;
-    /* AJUSTE 1: Reducido a 10px (de 15px) para acercar el título a las cards */
     margin-bottom: 10px; 
 }
 
-/* 2. Botón principal en color rojo */
 .btn {
   background: var(--primary-color);
   color: var(--text-light);
@@ -65,7 +61,7 @@ h3 {
 }
 
 .btn:hover {
-  background: #e00000; /* tono más brillante */
+  background: #e00000; 
   color: #fff;
   transform: translateY(-3px);
   box-shadow: 0 8px 18px rgba(202, 0, 0, 0.4);
@@ -75,8 +71,8 @@ h3 {
  * 2. HEADER Y NAVEGACIÓN (UNIFICADO)
  * ==================================== */
 header {
-    background: #fff; /* fondo blanco */
-    color: #000; /* texto negro */
+    background: #fff; 
+    color: #000; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,13 +86,12 @@ header {
 .logo {
     font-weight: 700;
     font-size: 1.8em;
-    color: var(--primary-color); /* mantiene el rojo en el logo */
+    color: var(--primary-color); 
     flex-shrink: 0;
     padding: 0; 
     background: none;
 }
 
-/* Botón hamburguesa (oculto en desktop) */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -150,7 +145,7 @@ nav ul {
 }
 
 nav a, .nav a {
-    color: #000; /* texto negro */
+    color: #000; 
     text-decoration: none;
     font-weight: bold;
     padding-bottom: 2px;
@@ -159,14 +154,14 @@ nav a, .nav a {
     font-size: 0.9em;
 }
 
-/* Hover */
+
 nav a:hover {
-    color: var(--primary-color); /* rojo al pasar el mouse */
+    color: var(--primary-color); 
 }
 
-/* Link activo */
+
 nav a.active {
-    color: var(--primary-color); /* rojo cuando está activo */
+    color: var(--primary-color); 
     font-weight: 800;
 }
 
@@ -176,7 +171,6 @@ nav a.active {
  * ==================================== */
 
 /* SLIDER */
-/* === SLIDER ACTUALIZADO === */
 .slider {
   position: relative;
   height: 300px;
@@ -222,7 +216,6 @@ nav a.active {
   right: 20px;
 }
 /* BENEFICIOS (Garantía, Multimarcas) */
-/* BENEFICIOS (Garantía, Multimarcas) */
 .benefits {
   background: #ffe6e6;
   padding: 30px 0;
@@ -235,13 +228,13 @@ nav a.active {
 .benefit {
   display: flex;
   align-items: center;
-  gap: 15px; /* más espacio entre ícono y texto */
+  gap: 15px; 
   padding: 10px 20px;
   max-width: 350px;
 }
 
 .benefit .icon {
-  font-size: 40px; /* ícono más grande */
+  font-size: 40px;
   color: var(--primary-color);
   flex-shrink: 0;
   line-height: 1;
@@ -265,12 +258,11 @@ nav a.active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* ESPACIO VERTICAL DE LA SECCIÓN */
     padding: 30px 0; 
 }
-/* AJUSTE TÍTULO ESPECÍFICO */
+
 .vehicles h3 {
-    margin-bottom: 15px; /* Tightly spaced h3 under .vehicles (re-ajustado) */
+    margin-bottom: 15px; 
 }
 
 .card-wrapper {
@@ -278,7 +270,6 @@ nav a.active {
     justify-content: center;
     flex-wrap: wrap;
     max-width: 100%;
-    /* AJUSTE EXTRA: Si el problema es aquí, quitamos el margen superior de la cuadrícula */
     margin-top: 0;
 }
 .vehicle-card {
@@ -304,7 +295,6 @@ nav a.active {
 
 /* MARCAS */
 .brands {
-    /* ESPACIO REDUCIDO */
     padding: 20px 0; 
     text-align: center;
 }
@@ -319,14 +309,12 @@ nav a.active {
 }
 
 
-
-/* TESTIMONIALS (sección que usa Bootstrap Grid) */
+/* TESTIMONIALS */
 .testimonials {
-    /* ESPACIO REDUCIDO */
     padding: 20px 0;
 }
 .testimonials h3 {
-    margin-bottom: 15px; /* Tightly spaced h3 under .testimonials */
+    margin-bottom: 15px; 
 }
 .testimonial {
     text-align: center;
@@ -344,7 +332,6 @@ nav a.active {
  * 4. PÁGINA QUIÉNES SOMOS
  * ==================================== */
 .content-section {
-    /* ESPACIO REDUCIDO */
     padding: 40px 0 40px 0; 
 }
 
@@ -392,6 +379,19 @@ nav a.active {
     font-weight: 700; 
     color: #000;
 }
+
+/* Quitar recuadro/overlay para títulos que deben mostrarse sin banner */
+.no-banner {
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  display: block;
+  color: #000; /* Título en negro */
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: 700;
+  margin: 30px 0;
+}
 .intro-text {
     max-width: 900px;
     margin: 0 auto 50px auto;
@@ -437,7 +437,7 @@ nav a.active {
 }
 .contacto-container h1 {
     font-size: 2.5em;
-    color: var(--primary-color);
+  color: #000; /* Título de contacto en negro */
     margin-bottom: 10px;
 }
 
@@ -519,7 +519,7 @@ footer .social, .redes {
 }
 footer .social a, .redes a {
     color: var(--text-light);
-    font-size: 1.2em; /* Para íconos de Font Awesome */
+    font-size: 1.2em; 
     transition: color 0.3s;
 }
 footer .social a:hover, .redes a:hover {
@@ -531,10 +531,8 @@ footer .social img, .redes img {
     transition: transform 0.2s;
 }
 
-
 /* ====================================
  * 7. RESPONSIVENESS (Media Queries)
- 
  * ==================================== */
 @media (max-width: 768px) {
     /* HEADER */
@@ -612,7 +610,7 @@ footer .social img, .redes img {
         gap: 20px;
     }
     .content-block {
-        border-left: none; /* Mejor visualización en móvil */
+        border-left: none; 
         border-top: 3px solid var(--primary-color);
     }
 
@@ -640,39 +638,6 @@ footer .social img, .redes img {
 /* ====================================
  * 5. PÁGINA DE SERVICIOS
  * ==================================== */
-
-/* BANNER */
-.servicios-banner {
-    position: relative;
-    width: 100%;
-    height: 350px; 
-    /* Ruta de la imagen subida */
-    background-image: url('servicios.jpg'); 
-    background-size: cover;
-    background-position: center; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.banner-overlay {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 30px 20px;
-    border-radius: 10px;
-}
-
-.servicios-banner h1 {
-    color: var(--text-light);
-    font-size: 3em;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.servicios-banner p {
-    color: var(--text-light);
-    font-size: 1.2em;
-}
 
 /* LISTA DE SERVICIOS */
 .services-list {
@@ -747,7 +712,6 @@ footer .social img, .redes img {
   text-align: center;
   font-size: 2em;
   color: var(--secondary-color);
-  /* AJUSTE 3: Reducido de 40px a 20px para acercar el título a las tarjetas */
   margin-bottom: 20px; 
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -776,7 +740,6 @@ footer .social img, .redes img {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* AJUSTE AÑADIDO: Quitar el subrayado de cualquier enlace dentro de la card */
 .vehicle-card a {
     text-decoration: none;
 }
@@ -815,13 +778,13 @@ footer .social img, .redes img {
 /* ---- Responsividad ---- */
 @media (max-width: 992px) {
   .card-wrapper {
-    grid-template-columns: repeat(2, 1fr); /* 2 por fila en tablets */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 600px) {
   .card-wrapper {
-    grid-template-columns: 1fr; /* 1 por fila en móvil */
+    grid-template-columns: 1fr; 
   }
 }
 
@@ -915,17 +878,16 @@ footer .social img, .redes img {
   margin-bottom: 25px;
 }
 
-/* Acciones / botones dentro de la ficha del vehículo */
 .vehicle-actions {
   display: flex;
-  flex-direction: row; /* botones en fila en desktop */
+  flex-direction: row; 
   gap: 12px;
   margin-top: 10px;
   align-items: center;
 }
 
 .vehicle-actions .btn {
-  margin-top: 0; /* ya controlado por el contenedor */
+  margin-top: 0; 
   padding: 10px 18px;
   border-radius: 8px;
   font-weight: 700;
@@ -933,10 +895,10 @@ footer .social img, .redes img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px; /* espacio entre icono y texto */
+  gap: 8px; 
 }
 
-/* pequeño ajuste para los iconos dentro de botones */
+
 .btn i {
   font-size: 1.05em;
   line-height: 1;
@@ -1022,7 +984,7 @@ footer .social img, .redes img {
     padding: 8px 12px;
   }
 
-  /* En móvil apilar botones y hacerlos full-width */
+  
   .vehicle-actions {
     flex-direction: column;
     width: 100%;
