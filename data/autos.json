@@ -84,45 +84,17 @@
     "link_wa": "https://wa.me/5491149919122"
   },
   {
-    "id": "peugeot208_1",
-    "titulo": "Peugeot 208 Feline",
-    "marca": "Peugeot",
-    "modelo": "208",
-    "anio": 2019,
-    "estado": "Usado",
-    "combustible": "Nafta",
-    "transmision": "Manual",
-    "color": "Blanco",
-    "imagen": "img/peugeot208.jpg",
-    "link_ml": "https://auto.mercadolibre.com.ar/MLA-2552727158-peugeot-208-16-feline-_JM",
-    "link_wa": "https://wa.me/5491149919122"
-  },
-  {
-    "id": "vwpolo_1",
-    "titulo": "Volkswagen Polo Highline",
-    "marca": "Volkswagen",
-    "modelo": "Polo",
-    "anio": 2023,
+    "id": "bmw_7",
+    "titulo": "BMW Serie",
+    "marca": "BMW",
+    "modelo": "Serie",
+    "anio": 2020,
     "estado": "Usado",
     "combustible": "Nafta",
     "transmision": "Automática",
-    "color": "Azul",
-    "imagen": "img/vw-polo.jpeg",
-    "link_ml": "https://auto.mercadolibre.com.ar/MLA-123456789-volkswagen-polo",
-    "link_wa": "https://wa.me/5491149919122"
-  },
-  {
-    "id": "vwpolo_2",
-    "titulo": "Volkswagen Polo Trendline",
-    "marca": "Volkswagen",
-    "modelo": "Polo",
-    "anio": 2022,
-    "estado": "Usado",
-    "combustible": "Nafta",
-    "transmision": "Manual",
-    "color": "Gris",
-    "imagen": "img/vw-polo.jpeg",
-    "link_ml": "https://auto.mercadolibre.com.ar/MLA-987654321",
+    "color": "Blanco",
+    "imagen": "img/BMWSerie.png",
+    "link_ml": "https://auto.mercadolibre.com.ar/MLA-1594107841-bmw-x1-18i-sdriver-active-2020-_JM",
     "link_wa": "https://wa.me/5491149919122"
   }
 ]
