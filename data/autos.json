@@ -23,7 +23,7 @@
     "combustible": "Nafta",
     "transmision": "Automática",
     "color": "Negro",
-    "imagen": "img/peugeot2008.png",
+    "imagen": "img/peugeot2008.jpg",
     "link_ml": "https://auto.mercadolibre.com.ar/MLA-123456789-volkswagen-polo",
     "link_wa": "https://wa.me/5491149919122"
   },
@@ -37,7 +37,7 @@
     "combustible": "Nafta",
     "transmision": "Manual",
     "color": "Blanco",
-    "imagen": "img/citroenPicasso.png",
+    "imagen": "img/citroenPicasso.jpg",
     "link_ml": "https://auto.mercadolibre.com.ar/MLA-2552649856-citron-c3-picasso-16-exclusive-110cv-_JM#polycard_client=search-nordic&search_layout=grid&position=3&type=item&tracking_id=a87e6942-0d91-43f3-9638-fe08638e711c1",
     "link_wa": "https://wa.me/5491149919122"
   },
@@ -93,7 +93,7 @@
     "combustible": "Nafta",
     "transmision": "Automática",
     "color": "Blanco",
-    "imagen": "img/BMWSerie.png",
+    "imagen": "img/BMWSerie.jpg",
     "link_ml": "https://auto.mercadolibre.com.ar/MLA-1594107841-bmw-x1-18i-sdriver-active-2020-_JM",
     "link_wa": "https://wa.me/5491149919122"
   }

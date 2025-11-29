@@ -217,7 +217,7 @@ nav a.active {
 }
 /* BENEFICIOS (Garantía, Multimarcas) */
 .benefits {
-  background: #ffe6e6;
+  background: #393939;
   padding: 30px 0;
   display: flex;
   justify-content: space-around;
@@ -243,12 +243,12 @@ nav a.active {
 .benefit h3 {
   font-size: 1.4em;
   margin-bottom: 5px;
-  color: var(--secondary-color);
+  color: var(--text-light);
 }
 
 .benefit p {
   margin: 0;
-  color: #555;
+  color: #ffffff;
   font-size: 0.95em;
 }
 
@@ -401,44 +401,59 @@ nav a.active {
     line-height: 1.8;
 }
 
-/* ===== MISIÓN Y VISIÓN - UNA DEBAJO DE LA OTRA SIN RECUADRO ===== */
-.mission-vision-block {
-    width: 100%;
-    margin-bottom: 60px;
-    padding: 0;
-    background: none;               /* Quitamos el fondo gris */
-    border: none;                   /* Quitamos el borde izquierdo */
+/* =============================
+MISIÓN Y VISIÓN EN DOS COLUMNAS
+============================= */
+.section-mv {
+padding: 60px 0;
 }
-
-.mission-vision-block:last-child {
-    margin-bottom: 0;
+.mission-vision-wrapper {
+display: flex;
+align-items: flex-start;
+gap: 50px;
 }
-
+.mv-text {
+flex: 1;
+}
 .block-title {
-    font-size: 1.9em;
-    margin-bottom: 20px;
-    font-weight: 700;
-    color: var(--secondary-color);
-    text-transform: uppercase;
+font-size: 2.1em;
+margin-bottom: 20px;
+font-weight: 700;
+color: #000;
+text-transform: capitalize;
+}
+.mv-text p {
+font-size: 1.05em;
+line-height: 1.8;
+margin-bottom: 14px;
+color: #555;
+}
+.mv-image {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.mv-image img {
+width: 100%;
+max-width: 480px;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+object-fit: cover;
 }
 
-.mission-vision-block p {
-    text-align: justify;
-    color: #555;
-    line-height: 1.8;
-    margin-bottom: 18px;
+
+/* --- Responsivo --- */
+@media (max-width: 900px) {
+.mission-vision-wrapper {
+flex-direction: column;
+text-align: center;
+}
+.mv-image img {
+max-width: 100%;
+}
 }
 
-/* En móvil mantiene el mismo comportamiento limpio */
-@media (max-width: 768px) {
-    .mission-vision-block {
-        margin-bottom: 50px;
-    }
-    
-    .block-title {
-        font-size: 1.7em;
-    }
-}
 /* ====================================
  * 5. PÁGINA DE CONTACTO
  * ==================================== */
