@@ -401,30 +401,43 @@ nav a.active {
     line-height: 1.8;
 }
 
-/* Misión/Visión (Split Content) */
-.split-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    margin-top: 40px;
+/* ===== MISIÓN Y VISIÓN - UNA DEBAJO DE LA OTRA SIN RECUADRO ===== */
+.mission-vision-block {
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 0;
+    background: none;               /* Quitamos el fondo gris */
+    border: none;                   /* Quitamos el borde izquierdo */
 }
-.content-block {
-    flex: 1;
-    padding: 20px;
-    border-left: 3px solid var(--primary-color);
-    background-color: #f9f9f9;
+
+.mission-vision-block:last-child {
+    margin-bottom: 0;
 }
+
 .block-title {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    font-weight: 700; 
+    font-size: 1.9em;
+    margin-bottom: 20px;
+    font-weight: 700;
     color: var(--secondary-color);
     text-transform: uppercase;
 }
-.content-block p {
+
+.mission-vision-block p {
     text-align: justify;
     color: #555;
-    line-height: 1.7;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+/* En móvil mantiene el mismo comportamiento limpio */
+@media (max-width: 768px) {
+    .mission-vision-block {
+        margin-bottom: 50px;
+    }
+    
+    .block-title {
+        font-size: 1.7em;
+    }
 }
 /* ====================================
  * 5. PÁGINA DE CONTACTO
@@ -680,7 +693,12 @@ footer .social img, .redes img {
 .service-item p {
     color: #555;
 }
-
+.text-center {
+    text-align: center !important;
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+}
 /* --------------------
  * RESPONSIVENESS (Ajuste de servicios en móvil)
  * -------------------- */
