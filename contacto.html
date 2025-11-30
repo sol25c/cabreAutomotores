@@ -34,39 +34,69 @@
     </header>
     
   <main class="contacto-container">
-    <h1 class="main-title">Contacto</h1>
-    <h2>¡Comunicate con nosotros! Te responderemos a la brevedad</h2>
+    
+    <div class="container">
+        <h1 class="main-title-contacto">Contacto: <br><span>Siempre a tu Disposición</span></h1>
+    </div>
 
-     <form action="https://formspree.io/f/mkgppldb" class="contacto-form" method="POST" id="form">
-      <input type="text" placeholder="Nombre y Apellido" name="nombreApellido" required>
-      <input type="email" placeholder="E-mail" name="" required>
-      <input type="tel" placeholder="Teléfono" name="telefono">
-      <select name="seleccion">
-        <option>Motivo de la consulta</option>
-        <option>Compra 0KM / Usados</option>
-        <option>Venta 0KM / Usados</option>
-        <option>Consignaciones</option>
-        <option>Financiación</option>
-        <option>Servicio de gestoría</option>
-      </select>
-      <textarea placeholder="Mensaje" name="mensaje"></textarea>
-      <button type="submit">ENVIAR</button>
-    </form>
 
-    <section class="contacto-info">
-      <iframe
-        src="https://www.google.com/maps?q=Cabr%C3%A9%20Automotores&output=embed"
-        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy">
-      </iframe>
+    <div class="container main-content-contacto">
+        
+        <section class="form-section">
+            <h2>Envianos tu consulta</h2>
+            <form action="https://formspree.io/f/mkgppldb" class="contacto-form" method="POST" id="form">
+                <input type="text" placeholder="Nombre y Apellido" name="nombreApellido" required>
+                <input type="email" placeholder="E-mail" name="" required>
+                <input type="tel" placeholder="Teléfono" name="telefono">
+                <select name="seleccion">
+                    <option>Motivo de la consulta</option>
+                    <option>Compra 0KM / Usados</option>
+                    <option>Venta 0KM / Usados</option>
+                    <option>Consignaciones</option>
+                    <option>Financiación</option>
+                    <option>Servicio de gestoría</option>
+                </select>
+                <textarea placeholder="Mensaje" name="mensaje"></textarea>
+                <button type="submit" class="btn">ENVIAR</button>
+            </form>
+        </section>
 
-      <div class="info">
-        <p>📞 +54 11 4991-9122</p>
-        <p>☎️ 6380-8100</p>
-        <p>📧 cabreautomotores@gmail.com</p>
-        <p>🕒 Lunes a Viernes de 10:00 a 13:00hs - 15:00 a 18:00hs<br>Sábados de 10:00 a 13:00hs</p>
-        <p>📍 Av. Gaona 3201, Ciudad Autónoma de Buenos Aires, Argentina</p>
-      </div>
-    </section>
+        <section class="contacto-info-modern">
+            
+            <div class="info-details">
+                <h2>Nuestra Ubicación y Horarios</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><strong>Dirección:</strong> Av. Gaona 3201, Ciudad Autónoma de Buenos Aires, Argentina</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p><strong>Teléfonos:</strong> +54 11 4991-9122 / 6380-8100</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><strong>Email:</strong> cabreautomotores@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>
+                        <strong>Horarios:</strong><br>
+                        Lunes a Viernes: 10:00 a 13:00hs - 15:00 a 18:00hs<br>
+                        Sábados: 10:00 a 13:00hs
+                    </p>
+                </div>
+            </div>
+
+            <div class="map-container">
+                 <iframe
+                    src="https://www.google.com/maps?q=Cabr%C3%A9%20Automotores&output=embed"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            
+        </section>
+        
+    </div>
   </main>
 
  <footer>
@@ -74,7 +104,6 @@
     <p>Términos y condiciones</p>
     <div class="social">
         <a href="https://www.instagram.com/cabre.automotores/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-<!--         <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a> -->
         <a href="https://www.facebook.com/share/1KCPdQcg6M/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
     </div>
   </footer>

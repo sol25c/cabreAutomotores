@@ -61,7 +61,7 @@ h3 {
 }
 
 .btn:hover {
-  background: #e00000; 
+  background: #e00000;
   color: #fff;
   transform: translateY(-3px);
   box-shadow: 0 8px 18px rgba(202, 0, 0, 0.4);
@@ -71,8 +71,8 @@ h3 {
  * 2. HEADER Y NAVEGACIÓN (UNIFICADO)
  * ==================================== */
 header {
-    background: #fff; 
-    color: #000; 
+    background: #fff;
+    color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,9 +86,9 @@ header {
 .logo {
     font-weight: 700;
     font-size: 1.8em;
-    color: var(--primary-color); 
+    color: var(--primary-color);
     flex-shrink: 0;
-    padding: 0; 
+    padding: 0;
     background: none;
 }
 
@@ -139,13 +139,13 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
     padding-left: 0;
     margin: 0;
 }
 
 nav a, .nav a {
-    color: #000; 
+    color: #000;
     text-decoration: none;
     font-weight: bold;
     padding-bottom: 2px;
@@ -156,18 +156,18 @@ nav a, .nav a {
 
 
 nav a:hover {
-    color: var(--primary-color); 
+    color: var(--primary-color);
 }
 
 
 nav a.active {
-    color: var(--primary-color); 
+    color: var(--primary-color);
     font-weight: 800;
 }
 
 
 /* ====================================
- * 3. PÁGINA DE INICIO (INDEX)
+ * 3. PÁGINA DE INICIO (INDEX) - Mantenido
  * ==================================== */
 
 /* SLIDER */
@@ -215,6 +215,8 @@ nav a.active {
 .slider .next {
   right: 20px;
 }
+/* style.css */
+
 /* BENEFICIOS (Garantía, Multimarcas) */
 .benefits {
   background: #393939;
@@ -226,18 +228,21 @@ nav a.active {
 }
 
 .benefit {
-  display: flex;
-  align-items: center;
-  gap: 15px; 
+  /* display: flex;  <-- ELIMINADO para que el h3 y el p se apilen */
+  /* align-items: center; <-- ELIMINADO */
+  /* gap: 15px; <-- ELIMINADO */
   padding: 10px 20px;
   max-width: 350px;
 }
 
-.benefit .icon {
-  font-size: 40px;
-  color: var(--primary-color);
-  flex-shrink: 0;
-  line-height: 1;
+/* Eliminado el bloque .benefit .icon ya que no existe más en el HTML */
+
+/* NUEVA REGLA: Estilos para el icono DENTRO del título H3 */
+.benefit h3 i {
+  font-size: 1.2em; /* Tamaño relativo al H3 */
+  color: var(--text-light); /* Asegura el color BLANCO para contraste */
+  margin-right: 10px; /* Espacio entre el icono y el texto del título */
+  vertical-align: middle; /* Alineación vertical */
 }
 
 .benefit h3 {
@@ -252,17 +257,8 @@ nav a.active {
   font-size: 0.95em;
 }
 
-
-/* AUTOS DESTACADOS */
-.vehicles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 0; 
-}
-
 .vehicles h3 {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
 
 .card-wrapper {
@@ -279,7 +275,7 @@ nav a.active {
     overflow: hidden;
     margin: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    flex: 0 0 250px; 
+    flex: 0 0 250px;
 }
 .vehicle-card img {
     width: 100%;
@@ -295,17 +291,17 @@ nav a.active {
 
 /* MARCAS */
 .brands {
-    padding: 20px 0; 
+    padding: 20px 0;
     text-align: center;
 }
 .brands h3 {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
 .brand-logos img {
     max-width: 100px;
     height: auto;
-    opacity: 1; 
-    transition: none; 
+    opacity: 1;
+    transition: none;
 }
 
 
@@ -314,7 +310,7 @@ nav a.active {
     padding: 20px 0;
 }
 .testimonials h3 {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
 .testimonial {
     text-align: center;
@@ -329,21 +325,24 @@ nav a.active {
 }
 
 /* ====================================
- * 4. PÁGINA QUIÉNES SOMOS
+ * 4. PÁGINA QUIÉNES SOMOS (MODIFICADO)
  * ==================================== */
 .content-section {
-    padding: 40px 0 40px 0; 
+    padding: 40px 0 40px 0;
+    /* Alineación de contenido principal a la izquierda */
+    text-align: left;
 }
 
 /* HERO SECTION (Banner de imagen) */
 .hero {
     position: relative;
     width: 100%;
-    height: 400px; 
-    background-image: url('/img/nosotros.png'); 
+    height: 400px;
+    /* Asegúrate de que esta imagen exista en tu carpeta img */
+    background-image: url('img/nosotros.png');
     background-size: cover;
-    background-position: center 30%; 
-    margin: 0; 
+    background-position: center 30%;
+    margin: 0;
 }
 .hero-overlay {
     position: absolute;
@@ -351,16 +350,16 @@ nav a.active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); 
+    background: rgba(0, 0, 0, 0.4);
 }
 .hero-breadcrumb {
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 0;
     width: 100%;
     color: var(--text-dark);
     font-size: 0.8em;
-    padding: 15px 0; 
+    padding: 15px 0;
     background-color: #fff;
     z-index: 5;
     font-weight: bold;
@@ -372,26 +371,38 @@ nav a.active {
 
 /* Contenido Principal */
 .main-title {
-    margin-top: 40px; 
-    text-align: center;
-    font-size: 2.5em;
+    margin-top: 40px;
+    text-align: left; /* Alineación a la izquierda */
+    font-size: 3em; /* Tamaño grande y audaz */
+    font-weight: 800; /* Peso audaz */
+    line-height: 1.1; /* Interlineado compacto */
     margin-bottom: 30px;
-    font-weight: 700; 
-    color: #000;
+    color: var(--secondary-color); /* Color base: Negro */
 }
 
-/* Quitar recuadro/overlay para títulos que deben mostrarse sin banner */
-.no-banner {
-  background: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  display: block;
-  color: #000; /* Título en negro */
-  text-align: center;
-  font-size: 2.2em;
-  font-weight: 700;
-  margin: 30px 0;
+/* Aplicar el color primario (rojo) al span */
+.main-title span {
+    color: var(--primary-color);
 }
+
+
+/* Nuevo estilo de subtítulo */
+.subtitulo {
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.content-section h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .intro-text {
     max-width: 900px;
     margin: 0 auto 50px auto;
@@ -401,128 +412,225 @@ nav a.active {
     line-height: 1.8;
 }
 
+/* --- Estilo de Lista (ul/li) con checks (Nuevo) --- */
+.content-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0 20px 0;
+}
+
+.content-section ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-size: 1.05em;
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+.content-section ul li strong {
+    color: var(--secondary-color);
+}
+
+.content-section ul li::before { 
+    content: "\f058"; 
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+
 /* =============================
-MISIÓN Y VISIÓN EN DOS COLUMNAS
+MISIÓN Y VISIÓN EN DOS COLUMNAS 
 ============================= */
 .section-mv {
-padding: 60px 0;
+    padding: 60px 0;
 }
 .mission-vision-wrapper {
-display: flex;
-align-items: flex-start;
-gap: 50px;
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #fcfcfc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
+
 .mv-text {
-flex: 1;
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff; /* Tarjeta de texto blanca */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
+
 .block-title {
-font-size: 2.1em;
-margin-bottom: 20px;
-font-weight: 700;
-color: #000;
-text-transform: capitalize;
+    font-size: 2.1em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: var(--primary-color); /* Título en color primario */
+    text-transform: capitalize;
 }
 .mv-text p {
-font-size: 1.05em;
-line-height: 1.8;
-margin-bottom: 14px;
-color: #555;
+    font-size: 1.05em;
+    line-height: 1.8;
+    margin-bottom: 14px;
+    color: #555;
 }
 .mv-image {
-flex: 1;
-display: flex;
-justify-content: center;
-align-items: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .mv-image img {
-width: 100%;
-max-width: 480px;
-border-radius: 12px;
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-object-fit: cover;
-}
-
-
-/* --- Responsivo --- */
-@media (max-width: 900px) {
-.mission-vision-wrapper {
-flex-direction: column;
-text-align: center;
-}
-.mv-image img {
-max-width: 100%;
-}
+    width: 100%;
+    max-width: 480px;
+    height: 300px; /* Altura fija para consistencia */
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* ====================================
- * 5. PÁGINA DE CONTACTO
+ * 8. PÁGINA DE CONTACTO (MODERNIZADO)
  * ==================================== */
-.contacto-container {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
-    text-align: center;
-}
-.contacto-container h1 {
-    font-size: 2.5em;
-  color: #000; /* Título de contacto en negro */
-    margin-bottom: 10px;
+
+/* Título simple para Contacto (H1) */
+.main-title-contacto {
+    margin-top: 40px; /* Espacio superior */
+    text-align: left; /* Alineado a la izquierda */
+    font-size: 3em; 
+    font-weight: 800;
+    line-height: 1.1; 
+    margin-bottom: 30px;
+    color: var(--secondary-color); /* Negro */
 }
 
-/* FORMULARIO */
-.contacto-form {
+.main-title-contacto span {
+    color: var(--primary-color); /* Rojo */
+}
+
+/* Contenedor principal de formulario y mapa */
+.main-content-contacto {
     display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* Formulario */
+.form-section {
+    flex: 1 1 40%;
+    min-width: 300px;
+}
+
+.form-section h2 {
+    font-size: 1.8em;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.contacto-form {
+    padding: 25px;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    /* Ajuste para que los inputs se apilen verticalmente y no se desalineen */
+    display: flex; 
     flex-direction: column;
     gap: 15px;
-    max-width: 600px;
-    margin: 0 auto 50px auto;
-    padding: 20px;
-    background: var(--text-light);
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 .contacto-form input,
 .contacto-form textarea,
 .contacto-form select {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 1em;
-    color: var(--text-dark);
-    transition: border-color 0.3s;
-}
-.contacto-form button[type="submit"]:hover {
-    background-color: #b30000;
+    padding: 15px; /* Más padding para look moderno */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Bordes más redondeados */
+    width: 100%; /* Asegura que ocupen todo el ancho */
 }
 
-/* CONTACTO INFO (Mapa y datos) */
-.contacto-info {
+.contacto-form button[type="submit"] {
+    width: 100%;
+    margin-top: 5px;
+    padding: 15px;
+}
+
+
+/* Información de Contacto (Mapa y Detalles) */
+.contacto-info-modern {
+    flex: 2 1 50%;
     display: flex;
-    justify-content: center;
-    gap: 40px;
-    align-items: flex-start;
-    margin-top: 40px;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 300px;
+}
+
+.contacto-info-modern h2 {
+    font-size: 1.8em;
+    color: var(--secondary-color);
+    margin-bottom: 25px;
     text-align: left;
 }
-.contacto-info iframe {
-    width: 100%;
-    max-width: 400px;
-    height: 300px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+.info-details {
+    padding: 0 20px;
 }
-.contacto-info .info {
-    font-size: 1.05em;
-    padding-top: 10px;
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
 }
-.contacto-info .info p {
-    margin-bottom: 10px;
+
+.info-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.info-item i {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.info-item p {
+    margin: 0;
+    line-height: 1.4;
     color: var(--text-dark);
 }
 
+.info-item strong {
+    color: var(--secondary-color);
+    display: block;
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Altura fija para el mapa */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
 /* ====================================
- * 6. FOOTER
+ * 6. FOOTER - Mantenido
  * ==================================== */
 footer {
     background: var(--secondary-color);
@@ -547,7 +655,7 @@ footer .social, .redes {
 }
 footer .social a, .redes a {
     color: var(--text-light);
-    font-size: 1.2em; 
+    font-size: 1.2em;
     transition: color 0.3s;
 }
 footer .social a:hover, .redes a:hover {
@@ -560,8 +668,22 @@ footer .social img, .redes img {
 }
 
 /* ====================================
- * 7. RESPONSIVENESS (Media Queries)
+ * 7. RESPONSIVENESS (Media Queries) - Modificado
  * ==================================== */
+@media (max-width: 900px) {
+    .mission-vision-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .mv-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    .mv-text {
+        padding: 15px;
+    }
+}
+
 @media (max-width: 768px) {
     /* HEADER */
     header {
@@ -631,16 +753,24 @@ footer .social img, .redes img {
     .benefit {
         margin: 0 20px;
     }
-    
-    /* QUIENES SOMOS */
-    .split-content {
-        flex-direction: column;
-        gap: 20px;
+
+    /* QUIENES SOMOS (Ajuste para móvil) */
+    .main-title {
+        font-size: 2em;
+        text-align: center;
     }
-    .content-block {
-        border-left: none; 
-        border-top: 3px solid var(--primary-color);
+    .subtitulo {
+        font-size: 1.5em;
+        text-align: center;
     }
+    .content-section {
+        text-align: center;
+    }
+    .content-section ul {
+        max-width: 90%;
+        margin: 10px auto 20px auto;
+    }
+    /* El resto del contenido se centra automáticamente o se ajusta con flex-direction: column */
 
     /* CONTACTO */
     .contacto-info {
@@ -664,76 +794,182 @@ footer .social img, .redes img {
 }
 
 /* ====================================
- * 5. PÁGINA DE SERVICIOS
+ * 5. PÁGINA DE SERVICIOS 
  * ==================================== */
+
+/* HERO DE SERVICIOS */
+.servicios-hero {
+    background: #fff; /* Fondo blanco */
+    padding: 60px 0 30px 0;
+    text-align: left; /* Alineación a la izquierda */
+}
+
+.servicios-hero h1 {
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+    line-height: 1.1;
+}
+
+.servicios-hero h1 span {
+    color: var(--primary-color);
+}
+
+.servicios-hero p {
+    font-size: 1.1em;
+    max-width: 600px;
+    color: #555;
+}
 
 /* LISTA DE SERVICIOS */
 .services-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre cards */
+    margin-top: 30px;
 }
 
 .service-item {
-  flex: 1 1 calc(33.333% - 30px); /* 3 por fila */
-  background: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    /* CLAVE: Mantener 4 columnas. 23% para dejar espacio para el gap. */
+    flex: 0 0 23%; 
+    max-width: 300px; /* Limite de ancho para que no se estiren demasiado en desktop */
+    
+    background: var(--text-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    border-top: 5px solid var(--primary-color); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* 💥 FIX: Centra el icono, título y subtítulo */
 }
-
 
 .service-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .service-item i {
-    font-size: 3em;
+    font-size: 3.5em; /* Icono más grande */
     color: var(--primary-color);
     margin-bottom: 15px;
+    display: block; /* Asegura que el icono sea un bloque para margen */
+    align-items: center;
+    justify-content: center;
+}
+
+/* 💥 NUEVO: Asegura que el cuerpo del texto y las listas sigan alineados a la izquierda para mejor lectura */
+.service-item p,
+.service-item ul,
+.service-item ul li {
+    text-align: left;
 }
 
 .service-item h3 {
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: var(--secondary-color);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-.service-item p {
+.service-item .subtitle { /* Nuevo estilo para el subtítulo */
+    display: block;
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.service-item p,
+.service-item strong {
     color: #555;
 }
+
+.service-item ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0 15px 0;
+}
+
+.service-item ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.service-item ul li::before { /* Icono de check para listas */
+    content: "\f058"; /* Fa Solid Check Circle */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
 .text-center {
     text-align: center !important;
     display: block;
     margin: 0 auto;
     max-width: 800px;
 }
-/* --------------------
+
+/* ESTILO PARA EL CTA FINAL */
+.cta-servicios {
+    background: var(--bg-dark);
+    color: var(--text-light);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cta-servicios h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.cta-servicios p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*--------------------
  * RESPONSIVENESS (Ajuste de servicios en móvil)
  * -------------------- */
+@media (max-width: 992px) {
+    /* Eliminamos la regla anterior que forzaba 2 columnas en tablets.
+       Mantenemos 4 columnas, y si el ancho no alcanza, flex-wrap se encargará
+       de bajarlas a la siguiente fila, pero idealmente se mantendrán 4.
+       Reducimos un poco el max-width para dar más flexibilidad si es necesario. */
+    .service-item {
+        flex: 0 0 calc(25% - 20px); /* 4 columnas, ajustado por el gap de 20px */
+        max-width: none;
+    }
+}
+
 @media (max-width: 768px) {
-    .servicios-banner h1 {
+    .servicios-hero h1 {
         font-size: 2.2em;
     }
 
     .services-list {
         flex-direction: column;
         align-items: center;
+        margin: 40px auto;
     }
-    
+
     .service-item {
-        flex: 1 1 100%; /* Ocupa todo el ancho en móvil */
+        flex: 1 1 100%; /* Ocupa todo el ancho en móvil (1 columna) */
         max-width: 90%;
     }
 }
 /* ====================================
- * SECCIÓN VEHÍCULOS — 3x3 GRID
+ * SECCIÓN VEHÍCULOS — 3x3 GRID - Mantenido
  * ==================================== */
 
 .vehicles {
@@ -745,7 +981,7 @@ footer .social img, .redes img {
   text-align: center;
   font-size: 2em;
   color: var(--secondary-color);
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -811,13 +1047,13 @@ footer .social img, .redes img {
 /* ---- Responsividad ---- */
 @media (max-width: 992px) {
   .card-wrapper {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
   .card-wrapper {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 }
 
@@ -850,223 +1086,177 @@ footer .social img, .redes img {
 }
 
 /* ====================================
- * PÁGINA DE DESCRIPCIÓN DE VEHÍCULO
+ * 9. PÁGINA DESCRIPCIÓN VEHÍCULO 
  * ==================================== */
 
 .vehicle-description {
-  padding: 60px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: calc(100vh - 160px); /* Altura total menos header + footer */
+    /* Padding manejado por .content-section */
+    background-color: #f8f8f8; /* Fondo suave para la sección */
 }
 
-.vehicle-description h1 {
-  font-size: 2.5em;
-  color: var(--secondary-color);
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
+/* Layout principal: 2 columnas */
 .vehicle-detail {
-  display: flex;
-  flex-direction: row; /* Dos columnas en pantallas grandes: imagen a la izquierda, datos a la derecha */
-  align-items: flex-start;
-  gap: 40px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  max-width: 1000px;
-  width: 90%;
-  transition: transform 0.3s ease;
+    display: flex;
+    gap: 40px; /* Espacio entre la foto y los datos */
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px;
 }
 
-.vehicle-detail:hover {
-  transform: translateY(-3px);
+.vehicle-photo {
+    flex: 2 1 60%; /* La foto ocupa más espacio */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .vehicle-photo img {
-  width: 400px;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 10px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .vehicle-data {
-  flex: 1;
+    flex: 1 1 40%; /* Los datos ocupan menos */
+    padding: 10px 0;
 }
 
 .vehicle-data h3 {
-  font-size: 1.6em;
-  color: var(--primary-color);
-  margin-bottom: 20px;
+    font-size: 1.8em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
 }
 
+/* Grid de datos (características) */
 .data-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px 30px;
-  margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas para el detalle */
+    gap: 15px 20px;
+    margin-bottom: 40px;
 }
+
+.data-item {
+    padding: 5px 0;
+    /* border-bottom: 1px dashed #ddd; */ /* Eliminado para look más limpio */
+}
+
+.data-item strong {
+    display: block;
+    font-size: 0.9em;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 3px;
+}
+
+.data-item span {
+    font-size: 1.1em;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+
+/* --- Estilos de Botones Específicos (Acciones) --- */
 
 .vehicle-actions {
-  display: flex;
-  flex-direction: row; 
-  gap: 12px;
-  margin-top: 10px;
-  align-items: center;
+    display: flex;
+    flex-direction: column; /* Apilar botones */
+    gap: 15px;
+    margin-top: 20px;
 }
 
-.vehicle-actions .btn {
-  margin-top: 0; 
-  padding: 10px 18px;
-  border-radius: 8px;
-  font-weight: 700;
-  text-align: center;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px; 
-}
-
-
-.btn i {
-  font-size: 1.05em;
-  line-height: 1;
-}
-
-/* Variantes de botones */
-.btn-primary { background: var(--primary-color); color: var(--text-light); }
-.btn-secondary { background: var(--secondary-color); color: var(--text-light); }
-.btn-info { background: #007bff; color: #fff; }
-.btn-success { background: #28a745; color: #fff; }
-
-/* MercadoLibre style (amarillo) */
-.btn-ml { background: var(--primary-color); color: var(--text-light); }
-.btn-ml:hover { background: #e00000; }
-
-/* Hover para variantes */
-.btn-primary:hover { background: #e00000; }
-.btn-secondary:hover { background: var(--secondary-color); color: var(--text-light); }
-.btn-info:hover { background: #0069d9; }
-.btn-success:hover { background: #218838; }
-
-.data-grid div {
-  background: #f7f7f7;
-  border-radius: 8px;
-  padding: 10px 15px;
-  text-align: left;
-}
-
-.data-grid strong {
-  color: var(--secondary-color);
-  display: block;
-  font-weight: 700;
-  font-size: 0.95em;
-}
-
-.data-grid p {
-  margin-top: 5px;
-  color: #555;
-}
-
-/* Responsivo */
-@media (max-width: 992px) {
-  .vehicle-description {
-    padding: 40px 20px;
-  }
-
-  .vehicle-description h1 {
-    font-size: 2em;
-    margin-bottom: 30px;
-  }
-
-  .vehicle-detail {
-    flex-direction: column; /* apilar en pantallas medianas y móviles */
-    align-items: center;
+.vehicle-actions .btn, 
+.vehicle-actions .btn-ml, 
+.vehicle-actions .btn-secondary, 
+.vehicle-actions .btn-success {
+    width: 100%;
+    justify-content: center;
     text-align: center;
-    width: 100%;
-    padding: 20px;
-    gap: 20px;
-  }
-
-  .vehicle-photo img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-  }
-
-  .vehicle-data {
-    width: 100%;
-  }
-
-  .vehicle-data h3 {
-    font-size: 1.4em;
-    margin-bottom: 15px;
-  }
-
-  .data-grid {
-    grid-template-columns: 1fr;
-    gap: 12px 15px;
-    margin-bottom: 15px;
-  }
-
-  .data-grid div {
-    padding: 8px 12px;
-  }
-
-  
-  .vehicle-actions {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-  }
-  .vehicle-actions .btn {
-    width: 100%;
-    padding: 12px 16px;
-    font-size: 0.95em;
-  }
 }
 
-@media (max-width: 600px) {
-  .vehicle-description {
-    padding: 20px 15px;
-  }
+/* Botón Whatsapp (Success / Verde) - Sin cambios */
+.btn-success {
+    background: #25D366; 
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+}
 
-  .vehicle-description h1 {
-    font-size: 1.6em;
-    margin-bottom: 20px;
-  }
+.btn-success:hover {
+    background: #19cb55;
+    transform: translateY(-3px);
+}
 
-  .vehicle-detail {
-    padding: 15px;
-  }
+/* Botón MercadoLibre */
+.btn-ml {
+    background: #3483fa; 
+    color: var(--text-light); 
+    padding: 12px 28px; 
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(52, 131, 250, 0.4); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 8px;
+    text-decoration: none; 
+}
 
-  .vehicle-data h3 {
-    font-size: 1.2em;
-  }
+.btn-ml:hover {
+    background: #0066ee; 
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(52, 131, 250, 0.6);
+}
 
-  .data-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px 12px;
-  }
+.btn-ml svg path {
+    fill: var(--text-light);
+}
 
-  .data-grid strong {
-    font-size: 0.9em;
-  }
+/* Botón Volver  */
+.btn-secondary {
+    background: #000; 
+    color: var(--text-light); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 
-  .data-grid p {
-    font-size: 0.9em;
-  }
+.btn-secondary:hover {
+    background: #333; 
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+}
 
-  .vehicle-actions .btn {
-    padding: 10px 14px;
-    font-size: 0.9em;
-  }
+@media (max-width: 900px) {
+    
+    .vehicle-data {
+        padding: 0;
+    }
 
-  .btn i {
-    font-size: 1em;
-  }
+    .data-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        border-top: none; 
+        border-radius: 0; 
+        overflow: visible;
+        background-color: transparent; 
+    }
+    
+    .data-item {
+        padding: 15px; 
+        border-bottom: none; 
+        background: #fff; 
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    }
+    .data-item:last-child {
+        border-bottom: none;
+    }
+    
+
+    .vehicle-actions {
+        flex-direction: column; 
+        gap: 10px;
+        padding: 0 20px 20px 20px;
+        align-items: flex-start; 
+    }
 }
