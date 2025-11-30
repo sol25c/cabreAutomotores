@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cabré Automotores </title>
+    <title>Cabré Automotores - Vehículos</title>
     
     <script src="https://kit.fontawesome.com/2c9468d754.js" crossorigin="anonymous"></script>
     
@@ -33,39 +33,31 @@
     </header>
 
     <main>
-        <section id="listado-vehiculos" class="vehicles container my-5">
-            <h3 class="text-center mb-4">Nuestros vehículos</h3>
-            <div class="card-wrapper">
-                <!-- Las tarjetas se generan dinámicamente desde js/vehiculos.js -->
-            </div>
-        </section>
-
-        <section id="detalle-vehiculo" class="container my-5" style="display:none;">
-            <a href="#" id="btn-volver" class="btn btn-secondary">← Volver al listado</a>
-            <div class="detalle-wrapper">
-                <h2 id="detalle-titulo"></h2>
-                <img id="detalle-imagen" src="" alt="" style="max-width:100%;height:auto;">
-                <div id="detalle-datos" class="detalle-datos"></div>
-                <p>
-                    <a id="btn-consultar" class="btn btn-success" target="_blank" rel="noopener">Consultar</a>
-                    <a id="btn-info-ml" class="btn btn-info" target="_blank" rel="noopener">Más info</a>
-                </p>
-            </div>
-        </section>
-
-    </main>
-
- <footer>
-    <p>©2025 Cabré Automotores. Todos los derechos reservados.</p>
-    <p>Términos y condiciones</p>
-    <div class="social">
-        <a href="https://www.instagram.com/cabre.automotores/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-<!--         <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a> -->
-        <a href="https://www.facebook.com/share/1KCPdQcg6M/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
         
-    </div>
+        <section class="content-section vehiculos-hero-unificado">
+            <div class="container">
+                <h1 class="main-title">Encontrá tu Próximo Vehículo<br><span>La Mejor Oportunidad te Espera</span></h1>
+                <p>Explorá nuestro listado de 0KM y usados seleccionados, garantizando calidad y transparencia en cada unidad.</p>
+            </div>
+        </section>
+
+        <section id="listado-vehiculos" class="content-section vehicles-listing">
+            <div class="container">
+                <div class="card-wrapper"> 
+                    </div>
+            </div>
+        </section>
+        
+        </main>
+
+    <footer>
+        <p>©2025 Cabré Automotores. Todos los derechos reservados.</p>
+        <p>Términos y condiciones</p>
+        <div class="social">
+            <a href="https://www.instagram.com/cabre.automotores/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1KCPdQcg6M/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
     </footer>
-    
     <script src="js/menu.js"></script>
     <script src="js/vehiculos.js"></script>
 </body>

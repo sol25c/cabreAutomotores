@@ -969,50 +969,53 @@ footer .social img, .redes img {
     }
 }
 /* ====================================
- * SECCIÓN VEHÍCULOS — 3x3 GRID - Mantenido
+ * 6. PÁGINA DE VEHÍCULOS (LISTADO)
  * ==================================== */
 
-.vehicles {
-  padding: 60px 0;
-  background-color: #f8f8f8;
+/* HERO DE VEHÍCULOS - USANDO ESTRUCTURA UNIFICADA */
+.content-section.vehiculos-hero-unificado {
+    padding: 60px 0 30px 0;
 }
 
-.vehicles h3 {
-  text-align: center;
-  font-size: 2em;
-  color: var(--secondary-color);
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.vehiculos-hero-unificado p {
+    font-size: 1.1em;
+    max-width: 600px;
+    color: #555;
+    margin-bottom: 30px; 
 }
 
-/* ---- Cuadrícula 3 columnas ---- */
-.card-wrapper {
+
+/* ---- Contenedor y Tarjetas ---- */
+.vehicles-listing {
+    padding-top: 30px; 
+}
+
+.vehicle-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas en desktop */
   gap: 30px;
+  padding-bottom: 60px;
 }
 
-
-/* ---- Tarjetas ---- */
 .vehicle-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  /* Estilo moderno unificado */
+  background: var(--text-light); 
+  border-radius: 8px; 
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra similar a servicios */
+  border-top: 5px solid var(--primary-color); /* Toque de color */
 }
 
 .vehicle-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Efecto hover más pronunciado */
 }
 
 .vehicle-card a {
     text-decoration: none;
+    display: block; /* Asegura que toda la tarjeta sea cliqueable */
 }
-
 
 .vehicle-card img {
   width: 100%;
@@ -1027,64 +1030,44 @@ footer .social img, .redes img {
 
 .vehicle-info h4 {
   margin: 5px 0;
-  color: var(--primary-color);
-  font-size: 1.2em;
+  color: var(--secondary-color); 
+  font-size: 1.4em; 
+  font-weight: 700;
 }
 
 .vehicle-info .year {
   display: block;
-  color: var(--secondary-color);
-  font-weight: 600;
+  color: #777; 
+  font-weight: 500;
   margin-bottom: 5px;
+  font-size: 1em;
 }
 
 .vehicle-info p {
-  margin: 3px 0;
-  color: #555;
-  font-size: 0.95em;
+    /* Estilo para el Precio o dato principal */
+    margin: 10px 0 15px 0;
+    font-size: 1.3em;
+    color: var(--primary-color);
+    font-weight: 700;
 }
 
-/* ---- Responsividad ---- */
+/* --------------------
+ * RESPONSIVENESS (Ajuste de vehículos)
+ * -------------------- */
 @media (max-width: 992px) {
-  .card-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .vehicle-wrapper {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet */
+        gap: 20px;
+    }
 }
 
-@media (max-width: 600px) {
-  .card-wrapper {
-    grid-template-columns: 1fr;
-  }
+@media (max-width: 768px) {
+    .vehicle-wrapper {
+        grid-template-columns: 1fr; /* 1 columna en móvil */
+        gap: 15px;
+        padding-bottom: 30px;
+    }
 }
-
-/* PUNTOS INDICADORES */
-.dots {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-  z-index: 5;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.dot.active {
-  background: white;
-}
-
-.dot:hover {
-  background: rgba(255, 255, 255, 0.8);
-}
-
 /* ====================================
  * 9. PÁGINA DESCRIPCIÓN VEHÍCULO 
  * ==================================== */
