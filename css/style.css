@@ -296,6 +296,7 @@ nav a.active {
 }
 .brands h3 {
     margin-bottom: 15px;
+    
 }
 .brand-logos img {
     max-width: 100px;
@@ -306,22 +307,45 @@ nav a.active {
 
 
 /* TESTIMONIALS */
-.testimonials {
-    padding: 20px 0;
+
+.testimonial-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
-.testimonials h3 {
-    margin-bottom: 15px;
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  border-top: 5px solid var(--primary-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.testimonial {
-    text-align: center;
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
-.testimonial h4 {
-    color: var(--secondary-color);
-    margin-bottom: 5px;
+
+.testimonial-card h4 {
+  color: var(--secondary-color);
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
-.stars {
-    color: gold;
-    font-size: 1.2em;
+
+.testimonial-card p {
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.testimonial-card .stars {
+  color: gold;
+  font-size: 1.2em;
 }
 
 /* ====================================
