@@ -1171,7 +1171,6 @@ MISIÓN Y VISIÓN EN DOS COLUMNAS
 }
 
 .vehicle-card {
-  /* Estilo moderno unificado */
   background: var(--text-light); 
   border-radius: 8px; 
   overflow: hidden;
@@ -1210,7 +1209,7 @@ MISIÓN Y VISIÓN EN DOS COLUMNAS
 
 .vehicle-info .year {
   display: block;
-  color: #777; 
+  color: #131010; 
   font-weight: 500;
   margin-bottom: 5px;
   font-size: 1em;
@@ -1219,7 +1218,7 @@ MISIÓN Y VISIÓN EN DOS COLUMNAS
 .vehicle-info p {
     margin: 10px 0 15px 0;
     font-size: 1.3em;
-    color: var(--se-color);
+    color: var(--secondary-color); 
     font-weight: 700;
 }
 
