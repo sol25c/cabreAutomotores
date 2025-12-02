@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 {label: 'Marca', value: auto.marca},
                 {label: 'Modelo', value: auto.modelo},
                 {label: 'Año', value: auto.anio},
-                {label: 'Estado', value: auto.estado},
                 {label: 'Combustible', value: auto.combustible},
                 {label: 'Transmisión', value: auto.transmision},
                 {label: 'Color', value: auto.color},

@@ -68,7 +68,7 @@ h3 {
 }
 
 /* ====================================
- * 2. HEADER Y NAVEGACIÓN (UNIFICADO)
+ * HEADER Y LOGO - OPTIMIZADO
  * ==================================== */
 header {
     background: #fff;
@@ -76,20 +76,49 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    padding: 12px 40px;           /* Reduje un poco el padding vertical */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 10;
-    margin: 0;
 }
 
 .logo {
-    font-weight: 700;
-    font-size: 1.8em;
-    color: var(--primary-color);
+    display: block;
+    height: 58px;                 /* Altura fija perfecta para header */
     flex-shrink: 0;
-    padding: 0;
-    background: none;
+}
+
+.logo img {
+    height: 57px;                 /* Respeta la altura del contenedor */
+    width: auto;                  /* Mantiene proporción */
+    max-width: 220px;             /* Evita que sea demasiado grande en pantallas grandes */
+    object-fit: contain;
+    display: block;
+}
+
+/* En móvil: logo más pequeño pero visible */
+@media (max-width: 768px) {
+    header {
+        padding: 12px 20px;
+    }
+    
+    .logo {
+        height: 48px;             /* Logo un poco más pequeño en móvil */
+    }
+    
+    .logo img {
+        max-width: 180px;
+    }
+}
+
+/* En pantallas muy pequeñas (celulares chicos) */
+@media (max-width: 480px) {
+    .logo {
+        height: 42px;
+    }
+    .logo img {
+        max-width: 160px;
+    }
 }
 
 .menu-toggle {

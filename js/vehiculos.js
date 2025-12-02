@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h4>${auto.titulo}</h4>
                         <span class="year">${auto.anio}</span>
                         <p>Color: ${auto.color}</p>
-                        <p>${auto.estado}</p>
+                    
                     </div>
                 </a>
             `;
@@ -70,7 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <div><strong>Marca</strong><p>${auto.marca}</p></div>
             <div><strong>Modelo</strong><p>${auto.modelo}</p></div>
             <div><strong>Año</strong><p>${auto.anio}</p></div>
-            <div><strong>Estado</strong><p>${auto.estado}</p></div>
             <div><strong>Combustible</strong><p>${auto.combustible}</p></div>
             <div><strong>Transmisión</strong><p>${auto.transmision}</p></div>
             <div><strong>Color</strong><p>${auto.color}</p></div>
