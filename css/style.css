@@ -13,8 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Unificación de fuentes */
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: "Segoe UI Variable", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif; 
 }
 
 body {
@@ -85,6 +84,12 @@ header {
 .logo {
     display: block;
     height: 58px;                 /* Altura fija perfecta para header */
+    flex-shrink: 0;
+}
+
+.logoFooter{
+    display: block;
+    height: 60px;                 /* Altura fija perfecta para footer */
     flex-shrink: 0;
 }
 
