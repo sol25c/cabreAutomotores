@@ -1419,3 +1419,37 @@ MISIÓN Y VISIÓN EN DOS COLUMNAS
         align-items: flex-start; 
     }
 }
+
+/* Mobile - Foto grande arriba, información abajo */
+@media (max-width: 768px) {
+    .vehicle-detail {
+        display: flex;
+        flex-direction: column; /* Apilar verticalmente */
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .vehicle-photo {
+        flex: 1 1 auto;
+        width: 100%;
+        max-height: 400px; /* Foto más grande en mobile */
+    }
+
+    .vehicle-data {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .vehicle-actions {
+        flex-direction: column;
+        gap: 12px;
+        padding: 0;
+    }
+
+    .vehicle-actions .btn,
+    .vehicle-actions .btn-ml,
+    .vehicle-actions .btn-secondary,
+    .vehicle-actions .btn-success {
+        width: 100%;
+    }
+}
