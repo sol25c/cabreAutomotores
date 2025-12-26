@@ -114,6 +114,22 @@ header {
     .logo img {
         max-width: 180px;
     }
+
+    /* Flechas del slider más sutiles en mobile */
+    .slider .prev,
+    .slider .next {
+        font-size: 1.2em;
+        padding: 6px;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0.6;
+        transition: all 0.3s ease;
+    }
+
+    .slider .prev:hover,
+    .slider .next:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 1;
+    }
 }
 
 /* En pantallas muy pequeñas (celulares chicos) */
