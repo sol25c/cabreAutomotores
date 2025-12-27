@@ -114,22 +114,6 @@ header {
     .logo img {
         max-width: 180px;
     }
-
-    /* Flechas del slider más sutiles en mobile */
-    .slider .prev,
-    .slider .next {
-        font-size: 1.2em;
-        padding: 6px;
-        background-color: rgba(0, 0, 0, 0.3);
-        opacity: 0.6;
-        transition: all 0.3s ease;
-    }
-
-    .slider .prev:hover,
-    .slider .next:hover {
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 1;
-    }
 }
 
 /* En pantallas muy pequeñas (celulares chicos) */
@@ -265,6 +249,58 @@ nav a.active {
 .slider .next {
   right: 20px;
 }
+
+/* PUNTOS INDICADORES DEL SLIDER */
+.slider .dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 5;
+}
+
+.slider .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.slider .dot:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.15);
+}
+
+.slider .dot.active {
+  background-color: var(--primary-color);
+  width: 12px;
+  height: 12px;
+  box-shadow: 0 0 6px rgba(202, 0, 0, 0.5);
+}
+
+/* Optimizar puntos para mobile */
+@media (max-width: 768px) {
+  .slider .dots {
+    bottom: 12px;
+    gap: 6px;
+  }
+  
+  .slider .dot {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .slider .dot.active {
+    width: 10px;
+    height: 10px;
+  }
+}
+
 /* style.css */
 
 /* BENEFICIOS (Garantía, Multimarcas) */

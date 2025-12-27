@@ -44,13 +44,15 @@
     <img src="img/slider3.png" alt="Auto 4" />
   </div>
 
-  <button class="prev" aria-label="Imagen anterior">◄</button>
-  <button class="next" aria-label="Siguiente imagen">►</button>
+  <button class="prev" aria-label="Imagen anterior" style="display: none;">◄</button>
+  <button class="next" aria-label="Siguiente imagen" style="display: none;">►</button>
 
-  <!-- Puntos indicadores (opcional) -->
+  <!-- Puntos indicadores -->
   <div class="dots">
     <span class="dot active" data-index="0"></span>
     <span class="dot" data-index="1"></span>
+    <span class="dot" data-index="2"></span>
+    <span class="dot" data-index="3"></span>
   </div>
 </section>
 
@@ -227,6 +229,7 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const images = document.querySelectorAll(".slider-images img");
+    const dots = document.querySelectorAll(".dots .dot");
     const prevBtn = document.querySelector(".slider .prev");
     const nextBtn = document.querySelector(".slider .next");
     let currentIndex = 0;
@@ -236,18 +239,34 @@
       images.forEach((img, i) => {
         img.classList.toggle("active", i === index);
       });
+      // Actualizar puntos
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === index);
+      });
     }
 
     // Botón "Siguiente"
-    nextBtn.addEventListener("click", () => {
-      currentIndex = (currentIndex + 1) % images.length; // Cicla al principio si llega al final
-      showImage(currentIndex);
-    });
+    if (nextBtn) {
+      nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+      });
+    }
 
     // Botón "Anterior"
-    prevBtn.addEventListener("click", () => {
-      currentIndex = (currentIndex - 1 + images.length) % images.length; // Cicla al final si está en el inicio
-      showImage(currentIndex);
+    if (prevBtn) {
+      prevBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+      });
+    }
+
+    // Hacer clic en los dots
+    dots.forEach((dot) => {
+      dot.addEventListener("click", () => {
+        currentIndex = parseInt(dot.getAttribute("data-index"));
+        showImage(currentIndex);
+      });
     });
   });
 </script>
