@@ -61,7 +61,7 @@
     "transmision": "Manual",
     "color": "Azul",
     "imagen": "img/toyotaYaris.png",
-    "link_ml": "https://auto.mercadolibre.com.ar/MLA-2794414490-toyota-yaris-15-107cv-s-_JM",
+    "link_ml": "https://auto.mercadolibre.com.ar/MLA-1664382097-toyota-yaris-15-107cv-s-cvt-_JM",
     "link_wa": "https://wa.me/5491149919122"
   },
   {
@@ -79,15 +79,15 @@
   },
   {
     "id": "bmw_7",
-    "titulo": "BMW Serie",
+    "titulo": "BMW X1",
     "marca": "BMW",
-    "modelo": "Serie",
+    "modelo": "X1",
     "anio": 2020,
     "combustible": "Nafta",
     "transmision": "Automática",
     "color": "Blanco",
     "imagen": "img/BMWSerie.png",
-    "link_ml": "https://auto.mercadolibre.com.ar/MLA-1655797031-bmw-x1-18i-sdriver-active-2020-_JM",
+    "link_ml": "https://auto.mercadolibre.com.ar/MLA-1664303745-18i-sdriver-active-2020-_JM",
     "link_wa": "https://wa.me/5491149919122"
   }
 ]
