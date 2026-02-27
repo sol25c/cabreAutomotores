@@ -89,5 +89,18 @@
     "imagen": "img/BMWSerie.png",
     "link_ml": "https://auto.mercadolibre.com.ar/MLA-1664303745-18i-sdriver-active-2020-_JM",
     "link_wa": "https://wa.me/5491149919122"
+  },
+  {
+    "id": "peugeot208",
+    "titulo": "Peugeot 208 Allure",
+    "marca": "Peugeot",
+    "modelo": "208",
+    "anio": 2020,
+    "combustible": "Nafta",
+    "transmision": "Manual",
+    "color": "Gris",
+    "imagen": "img/peugeot_Allure.jpg",
+    "link_ml": "https://auto.mercadolibre.com.ar/MLA-1685100519-peugeot-208-16-allure-linea-nueva-2020-_JM",
+    "link_wa": "https://wa.me/5491149919122"
   }
 ]
