@@ -35,7 +35,7 @@
     "transmision": "Manual",
     "color": "Blanco",
     "imagen": "img/citroenPicasso.jpg",
-    "link_ml": "https://auto.mercadolibre.com.ar/MLA-2759886234-citron-c3-picasso-16-exclusive-110cv-_JM",
+    "link_ml": "https://auto.mercadolibre.com.ar/MLA-1709928179-citron-c3-picasso-16-exclusive-110cv-2013-_JM",
     "link_wa": "https://wa.me/5491149919122"
   },
   {
@@ -90,20 +90,8 @@
     "link_ml": "https://auto.mercadolibre.com.ar/MLA-1664303745-18i-sdriver-active-2020-_JM",
     "link_wa": "https://wa.me/5491149919122"
   },
+  
   {
-    "id": "peugeot208",
-    "titulo": "Peugeot 208 Allure",
-    "marca": "Peugeot",
-    "modelo": "208",
-    "anio": 2020,
-    "combustible": "Nafta",
-    "transmision": "Manual",
-    "color": "Gris",
-    "imagen": "img/peugeot_Allure.png",
-    "link_ml": "https://auto.mercadolibre.com.ar/MLA-1685100519-peugeot-208-16-allure-linea-nueva-2020-_JM",
-    "link_wa": "https://wa.me/5491149919122"
-  },
-    {
     "id": "audi a1",
     "titulo": "Audi A1 1.4 Ambition TFSI 122cv",
     "marca": "Audi",
