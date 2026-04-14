@@ -101,10 +101,10 @@
     "transmision": "Manual",
     "color": "Rojo",
     "imagen": "img/audi_A1.png",
-    "link_ml": "https://auto.mercadolibre.com.ar/MLA-2964205796-audi-a1-14-ambition-tfsi-122cv-_JM",
+    "link_ml": "https://auto.mercadolibre.com.ar/MLA-3184310764-audi-a1-14-ambition-tfsi-122cv-_JM",
     "link_wa": "https://wa.me/5491149919122"
   },
-    {
+{
     "id": "jeep compass",
     "titulo": "Jeep Compass 2.4 Sport AT",
     "marca": "Jeep",
@@ -115,6 +115,19 @@
     "color": "Gris",
     "imagen": "img/jeep.png",
     "link_ml": "https://auto.mercadolibre.com.ar/MLA-3035206190-jeep-compass-24-sport-at-_JM",
+    "link_wa": "https://wa.me/5491149919122"
+  },
+  {
+    "id": "changan",
+    "titulo": "Changan CS55 1.5T Pro AT",
+    "marca": "Changan",
+    "modelo": "CS55",
+    "anio": 2026,
+    "combustible": "Híbrido/Nafta",
+    "transmision": "Automática",
+    "color": "Blanco",
+    "imagen": "img/changan.png",
+    "link_ml": "https://auto.mercadolibre.com.ar/MLA-3060374718-changan-cs55-plus-phev-hibrido-enchufable-_JM",
     "link_wa": "https://wa.me/5491149919122"
   }
 
