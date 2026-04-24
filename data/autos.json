@@ -90,20 +90,6 @@
     "link_ml": "https://auto.mercadolibre.com.ar/MLA-3112387782-bmw-x1-18i-sdriver-active-2020-_JM",
     "link_wa": "https://wa.me/5491149919122"
   },
-  
-  {
-    "id": "audi a1",
-    "titulo": "Audi A1 1.4 Ambition TFSI 122cv",
-    "marca": "Audi",
-    "modelo": "A1",
-    "anio": 2012,
-    "combustible": "Nafta",
-    "transmision": "Manual",
-    "color": "Rojo",
-    "imagen": "img/audi_A1.png",
-    "link_ml": "https://auto.mercadolibre.com.ar/MLA-3184310764-audi-a1-14-ambition-tfsi-122cv-_JM",
-    "link_wa": "https://wa.me/5491149919122"
-  },
 {
     "id": "jeep compass",
     "titulo": "Jeep Compass 2.4 Sport AT",
