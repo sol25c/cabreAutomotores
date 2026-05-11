@@ -115,6 +115,33 @@
     "imagen": "img/changan.png",
     "link_ml": "https://auto.mercadolibre.com.ar/MLA-1763286205-changan-cs55-15-phev-plus-0km-_JM",
     "link_wa": "https://wa.me/5491149919122"
+  },
+  {
+    "id": "CHEVROLETONIX",
+    "titulo": "Chevolet ONIX 1.4 N LT",
+    "marca": "Chevrolet",
+    "modelo": "ONIX",
+    "anio": 2018,
+    "combustible": "Nafta",
+    "transmision": "Manual",
+    "color": "Bordó",
+    "imagen": "img/chevrolet_onix.jpg",
+    "link_ml": "",
+    "link_wa": "https://wa.me/5491149919122"
+  },
+    {
+    "id": "renaultLogan",
+    "titulo": "LOGAN PH2 INTENS 1.6 CVT",
+    "marca": "Renault",
+    "modelo": "Logan",
+    "anio": 2020,
+    "combustible": "Nafta",
+    "transmision": "Manual",
+    "color": "Blanco",
+    "imagen": "img/renault_logan.png",
+    "link_ml": "",
+    "link_wa": "https://wa.me/5491149919122"
   }
+
 
 ]
