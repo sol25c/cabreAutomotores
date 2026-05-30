@@ -300,7 +300,13 @@ nav a.active {
 
 @media (max-width: 768px) {
   .slider {
-    height: 400px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    max-height: 70vw;
+  }
+
+  .slider img {
+    object-position: center center;
   }
   
   .slider .dots {
@@ -321,7 +327,13 @@ nav a.active {
 
 @media (max-width: 480px) {
   .slider {
-    height: 300px;
+    aspect-ratio: 3 / 2;
+    max-height: none;
+  }
+
+  .slider img {
+    object-fit: cover;
+    object-position: center top;
   }
 }
 
@@ -1651,30 +1663,4 @@ MISIÓN Y VISIÓN EN DOS COLUMNAS
     .vehicle-actions .btn-success {
         width: 100%;
     }
-}
-/* ====================================
- * FIX: Eliminar subrayado azul en cards de vehículos
- * Aplica tanto a cards del home (a.vehicle-card)
- * como a cards de vehiculos.js (div.vehicle-card > a.detail-link)
- * ==================================== */
-a.vehicle-card,
-a.vehicle-card:link,
-a.vehicle-card:visited,
-a.vehicle-card:hover,
-a.vehicle-card:active,
-.vehicle-card .detail-link,
-.vehicle-card .detail-link:link,
-.vehicle-card .detail-link:visited,
-.vehicle-card .detail-link:hover,
-.vehicle-card .detail-link:active {
-    text-decoration: none !important;
-    color: inherit !important;
-    display: block;
-}
-
-.vehicle-card h4,
-.vehicle-card p,
-.vehicle-card span {
-    text-decoration: none !important;
-    color: inherit !important;
 }
