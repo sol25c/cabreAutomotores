@@ -10,6 +10,35 @@
      <script src="https://kit.fontawesome.com/2c9468d754.js" crossorigin="anonymous"></script>
      
      <link rel="stylesheet" href="css/style.css"> 
+     <style>
+       /* Slider de testimonios - viewport + track */
+       .testimonial-viewport {
+         overflow: hidden;
+         width: 100%;
+         max-width: 1100px;
+         margin: 0 auto 30px;
+       }
+       .testimonial-track {
+         display: flex;
+         gap: 20px;
+         transition: transform 0.4s ease;
+         will-change: transform;
+       }
+       .testimonial-card {
+         flex: 0 0 calc((100% - 40px) / 3);
+         min-width: 0;
+       }
+       @media (max-width: 1023px) {
+         .testimonial-card {
+           flex: 0 0 calc((100% - 20px) / 2);
+         }
+       }
+       @media (max-width: 767px) {
+         .testimonial-card {
+           flex: 0 0 100%;
+         }
+       }
+     </style>
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -38,28 +67,25 @@
 </header>
 <section class="slider">
   <div class="slider-images">
-    <img src="img/slider.png" alt="Auto 1" class="active" />
-    <img src="img/slider1.png" alt="Auto 2" />
-    <img src="img/slider2.png" alt="Auto 3" />
-    <img src="img/slider3.png" alt="Auto 4" />
+    <img src="img/slider.webp" alt="Auto 1" class="active" />
+    <img src="img/slider1.webp" alt="Auto 2" />
+    <img src="img/slider2.webp" alt="Auto 3" />
   </div>
 
   <button class="prev" aria-label="Imagen anterior" style="display: none;">◄</button>
   <button class="next" aria-label="Siguiente imagen" style="display: none;">►</button>
 
-  <!-- Puntos indicadores -->
   <div class="dots">
     <span class="dot active" data-index="0"></span>
     <span class="dot" data-index="1"></span>
     <span class="dot" data-index="2"></span>
-    <span class="dot" data-index="3"></span>
   </div>
 </section>
 
 <section class="benefits d-flex justify-content-around py-4">
   <div class="benefit mx-3">
     <h3><i class="fas fa-check-circle"></i> Garantía Asegurada</h3>
-    <p>Seguridad en tu compra</p>
+    <p>Security en tu compra</p>
   </div>
 
   <div class="benefit mx-3">
@@ -72,25 +98,25 @@
   <h3 class="text-center mb-4 main-title">Nuestros vehículos</h3>
 
   <div class="card-wrapper">
-    <div class="vehicle-card">
+    <a href="descripcion_vehiculo.html?id=peugeot208_1" class="vehicle-card">
       <img src="img/peugeot208.png" alt="Peugeot208">
       <div class="vehicle-info">
         <h4>Peugeot 208</h4>
         <span class="year">2019</span>
         <p>Color: Blanco</p>
       </div>
-    </div>
+    </a>
 
-    <div class="vehicle-card">
+    <a href="descripcion_vehiculo.html?id=toyotaCorolla_4" class="vehicle-card">
       <img src="img/toyotaCorolla.png" alt="toyotaCorolla">
       <div class="vehicle-info">
         <h4>Toyota Corolla</h4>
         <span class="year">2015</span>
         <p>Color: Blanco</p>
       </div>
-    </div>
+    </a>
 
-    <div class="vehicle-card">
+    <a href="descripcion_vehiculo.html?id=vwvento_6" class="vehicle-card">
       <img src="img/vw-vento.png" alt="vw-vento">
       <div class="vehicle-info">
         <h4>Volkswagen Vento</h4>
@@ -98,7 +124,7 @@
         <p>Color: Dorado</p>
 
       </div>
-    </div>
+    </a>
   </div>
 
   <div class="text-center mt-4">
@@ -106,34 +132,34 @@
   </div>
 </section>
 
-  <section class="brands container my-5">
-    <h3 class="text-center mb-4 main-title">Marcas que trabajamos</h3>
-    <div class="brand-logos d-flex justify-content-around flex-wrap">
-      <img src="img/fiat.jpg" alt="Fiat" />
-      <img src="img/citroen.png" alt="Citroen" />
-      <img src="img/bmw.png" alt="BMW" />
-      <img src="img/hyundai.png" alt="hyundai" />
-      <img src="img/vw.png" alt="Volkswagen" />
-      <img src="img/honda.jpg" alt="honda" />
-    
-    </div>
+  <section class="brands container my-5">
+    <h3 class="text-center mb-4 main-title">Marcas que trabajamos</h3>
+    <div class="brand-logos d-flex justify-content-around flex-wrap">
+      <img src="img/fiat.jpg" alt="Fiat" />
+      <img src="img/citroen.png" alt="Citroen" />
+      <img src="img/bmw.png" alt="BMW" />
+      <img src="img/hyundai.png" alt="hyundai" />
+      <img src="img/vw.png" alt="Volkswagen" />
+      <img src="img/honda.jpg" alt="honda" />
+    
+    </div>
 <div class="brand-logos d-flex justify-content-around flex-wrap">
-      <img src="img/audi.png" alt="Fiat" />
-      <img src="img/gwm.png" alt="gwm" />
+      <img src="img/audi.png" alt="Fiat" />
+      <img src="img/gwm.png" alt="gwm" />
       <img src="img/lexus.jpg" alt="lexus" />
-      <img src="img/chevrolet.jpg" alt="chevrolet" />
-      <img src="img/DFSK.jpg" alt="DFSK" />
-      <img src="img/chery.jpg" alt="chery" />
-  
+      <img src="img/chevrolet.jpg" alt="chevrolet" />
+      <img src="img/DFSK.jpg" alt="DFSK" />
+      <img src="img/chery.jpg" alt="chery" />
+  
 </div>
 <div class="brand-logos d-flex justify-content-around flex-wrap">
-      <img src="img/byd.png" alt="byd" />
-      <img src="img/peugeot.jpg" alt="peugeot" />
-      <img src="img/ford.png" alt="ford" />
-      <img src="img/geely.png" alt="Geely" />
-      <img src="img/toyota.jpg" alt="toyota" />
+      <img src="img/byd.png" alt="byd" />
+      <img src="img/peugeot.jpg" alt="peugeot" />
+      <img src="img/ford.png" alt="ford" />
+      <img src="img/geely.png" alt="Geely" />
+      <img src="img/toyota.jpg" alt="toyota" />
       <img src="img/Suzuki.png" alt="suzuki" />
-     
+       
 </div>
 <div class="brand-logos d-flex justify-content-around flex-wrap">
   <img src="img/renault.png" alt="renault" />
@@ -144,37 +170,58 @@
    <img src="img/Jac-motors.png" alt="Jac-motors" />
 </div>
 
-  </section>
+  </section>
 
- 
+ 
 <section class="testimonials">
   <h3 class="text-center mb-4 main-title">Comentarios</h3>
-  <div class="testimonial-wrapper">
-    <div class="testimonial-card">
-      <h4>Andrés Alberto Mosquera</h4>
-      <p>"Cabré automotores confianza total!!!"</p>
-      <div class="stars">★★★★★</div>
+  <div class="testimonial-viewport">
+    <div class="testimonial-track">
+      <div class="testimonial-card">
+        <h4>Silvina Monlezun</h4>
+        <p>"Muy buena la atención del Sr. Juan José, los trámites salieron rápido, el auto impecable."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testimonial-card">
+        <h4>Patricia Daddino</h4>
+        <p>"Mi experiencia personal para adquirir mi nuevo vehículo fue excelente! Destaco la atención que me brindaron Juan Y Miguel, siempre atentos y muy responsables. Gracias por todo. Los recomiendo totalmente."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testimonial-card">
+        <h4>Damian Zago</h4>
+        <p>"Excelente atención el señor Juan Cabre. Siempre bien predispuesto ante cada pregunta. Finalmente compramos y lo volveríamos a hacer."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testimonial-card">
+        <h4>Christian Zuanich</h4>
+        <p>"Segunda vez que realizo una operación con ellos y confirmo que son excelentes. La atención es impecable, tanto por parte del personal como del dueño. Destaco por sobre todo la responsabilidad y el profesionalismo con el que se manejan..."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testimonial-card">
+        <h4>Javier Palacios</h4>
+        <p>"Unos grandes!, recién acabo de comprar un auto y la atención que brindaron todos fue excelente 👌 Totalmente recomendables."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testimonial-card">
+        <h4>Mario Artacho</h4>
+        <p>"Excelente atención. Juan José un capo. Todo salió de 10 realmente para recomendar y me lleve un autazo gente totalmente honesta."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testimonial-card">
+        <h4>Sandra Fosco</h4>
+        <p>"Excelente atención, vendí una camioneta súper rápido, súper atento el señor Cabré."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testimonial-card">
+        <h4>Luis Di Pietro</h4>
+        <p>"La atención del Señor Juan de principio a fin fue muy buena, nos ayudo con todo el tramite de la transferencia y todo muy rápido, el auto que compramos estaba en las condiciones que nos dijeron no le esconden nada. Volvería a comprar otro auto con ellos. Los autos que venden están en buen estado de conservación."</p>
+        <div class="stars">★★★★★</div>
+      </div>
     </div>
-    <div class="testimonial-card">
-      <h4>Daniel Portilla</h4>
-      <p>"La mejor concesionaria de autos, seriedad y honestidad"</p>
-      <div class="stars">★★★★★</div>
-    </div>
-    <div class="testimonial-card">
-      <h4>Mario Artacho</h4>
-      <p>"Excelente atención. Juan José es un capo. Todo salió de 10, realmente para recomendar y me lleve un autazo, gente totalmente honesta"</p>
-      <div class="stars">★★★★★</div>
-    </div>
-    <div class="testimonial-card">
-      <h4>Carlos Alberto Ricardi</h4>
-      <p>"JUAN CABRÉ tiene autos de primera y bien de papeles, es serio y prolijo para tratar al público"</p>
-      <div class="stars">★★★★★</div>
-    </div>
-     <div class="testimonial-card">
-      <h4>Ignacio Ortíz</h4>
-      <p>"Excelente autos y mejor atención, están en todos los detalles"</p>
-      <div class="stars">★★★★★</div>
-    </div>
+  </div>
+  <div class="testimonial-nav">
+    <button class="testimonial-prev" aria-label="Comentario anterior">◄</button>
+    <button class="testimonial-next" aria-label="Siguiente comentario">►</button>
   </div>
 </section>
 
@@ -183,7 +230,6 @@
 <footer class="site-footer">
   <div class="container footer-container">
 
-    <!-- Columna 1: Logo + descripción corta -->
     <div class="footer-col logo-col">
       <a href="index.html" class="footer-logo">
         <img src="img/logoFooter.png" alt="Cabré Automotores">
@@ -202,7 +248,6 @@
       </div>
     </div>
 
-    <!-- Columna 2: Navegación -->
     <div class="footer-col">
       <h4>Navegación</h4>
       <ul>
@@ -214,7 +259,6 @@
       </ul>
     </div>
 
-    <!-- Columna 4: Contacto + Horarios -->
     <div class="footer-col contact-col">
       <h4>Contacto</h4>
          <p><i class="fas fa-map-marker-alt"></i> Av. Gaona 3201, CABA</p>
@@ -231,7 +275,6 @@
 
   </div>
 
-  <!-- Línea divisoria y copyright -->
   <div class="footer-bottom">
     <div class="container">
       <p>© 2025 Cabré Automotores </p>
@@ -281,6 +324,50 @@
         showImage(currentIndex);
       });
     });
+
+    // SLIDER DE TESTIMONIOS
+    (function() {
+      const track = document.querySelector(".testimonial-track");
+      const cards = document.querySelectorAll(".testimonial-card");
+      const prevBtn = document.querySelector(".testimonial-prev");
+      const nextBtn = document.querySelector(".testimonial-next");
+      if (!track || cards.length === 0) return;
+
+      let idx = 0;
+
+      function visibleCount() {
+        return window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+      }
+
+      function move() {
+        // Usamos el ancho real de la primera tarjeta + su gap
+        const card = cards[0];
+        const cardStyle = window.getComputedStyle(card);
+        const trackStyle = window.getComputedStyle(track);
+        const gap = parseFloat(trackStyle.gap) || parseFloat(trackStyle.columnGap) || 20;
+        const step = card.offsetWidth + gap;
+        track.style.transform = "translateX(" + (-idx * step) + "px)";
+      }
+
+      function maxIdx() {
+        return Math.max(0, cards.length - visibleCount());
+      }
+
+      nextBtn.addEventListener("click", function() {
+        idx = idx >= maxIdx() ? 0 : idx + 1;
+        move();
+      });
+
+      prevBtn.addEventListener("click", function() {
+        idx = idx <= 0 ? maxIdx() : idx - 1;
+        move();
+      });
+
+      window.addEventListener("resize", function() {
+        if (idx > maxIdx()) idx = maxIdx();
+        move();
+      });
+    })();
   });
 </script>
 <script src="js/menu.js"></script>
