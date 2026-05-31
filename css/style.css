@@ -270,25 +270,26 @@ nav a.active {
 }
 
 .slider .dot {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.85);
   cursor: pointer;
   transition: all 0.3s ease;
-  border: none;
 }
 
 .slider .dot:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-  transform: scale(1.15);
+  background-color: rgba(255, 255, 255, 0.75);
+  transform: scale(1.2);
 }
 
 .slider .dot.active {
-  background-color: var(--primary-color);
-  width: 14px;
-  height: 14px;
-  box-shadow: 0 0 6px rgba(202, 0, 0, 0.5);
+  background-color: #ffffff;
+  border-color: #ffffff;
+  width: 12px;
+  height: 12px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
 /* Optimizar puntos para mobile */
@@ -300,13 +301,7 @@ nav a.active {
 
 @media (max-width: 768px) {
   .slider {
-    height: auto;
-    aspect-ratio: 4 / 3;
-    max-height: 70vw;
-  }
-
-  .slider img {
-    object-position: center center;
+    height: 400px;
   }
   
   .slider .dots {
@@ -327,13 +322,7 @@ nav a.active {
 
 @media (max-width: 480px) {
   .slider {
-    aspect-ratio: 3 / 2;
-    max-height: none;
-  }
-
-  .slider img {
-    object-fit: cover;
-    object-position: center top;
+    height: 300px;
   }
 }
 
