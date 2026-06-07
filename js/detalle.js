@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const imgEl = document.getElementById('detalle-imagen');
     const datosEl = document.getElementById('detalle-datos');
     const btnConsultar = document.getElementById('btn-consultar');
-    const btnMl = document.getElementById('btn-info-ml');
     const btnVolver = document.getElementById('btn-volver');
 
     function showError(msg) {
@@ -14,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         datosEl.innerHTML = `<p class="text-danger">${msg}</p>`;
         imgEl.src = 'img/placeholder.jpg';
         btnConsultar.href = '#';
-        btnMl.href = '#';
     }
 
     // Botón volver: intenta volver en el historial, si no, redirige a listado
@@ -53,8 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 {label: 'Marca', value: auto.marca},
                 {label: 'Modelo', value: auto.modelo},
                 {label: 'Año', value: auto.anio},
+                {label: 'Puertas', value: auto.Puertas},
                 {label: 'Combustible', value: auto.combustible},
                 {label: 'Transmisión', value: auto.transmision},
+                {label: 'Tipo de Carrocería', value: auto['Tipo de Carrocería']},
+                {label: 'Kilometraje', value: auto.Kilometraje},
                 {label: 'Color', value: auto.color},
             ];
 
@@ -63,7 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
             `).join('');
 
             btnConsultar.href = auto.link_wa || '#';
-            btnMl.href = auto.link_ml || '#';
         })
         .catch(err => {
             console.error('Error cargando autos.json', err);

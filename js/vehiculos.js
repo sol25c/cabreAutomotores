@@ -42,8 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="${auto.imagen}" alt="${auto.titulo}" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2NjYyIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE4IiBmaWxsPSIjOTk5IiBmaWxsdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlbiBubyBkaXNwb25pYmxlPC90ZXh0Pjwvc3ZnPg=='">
                 <div class="vehicle-info">
                     <h4>${auto.titulo}</h4>
-                    <span class="year">${auto.anio}</span>
-                    <p>Color: ${auto.color}</p>
+                    <p>${auto.modelo} | ${auto.anio}</p>
                 </div>
             `;
             // No interceptamos el click: dejamos que el enlace navegue a la página de detalle
