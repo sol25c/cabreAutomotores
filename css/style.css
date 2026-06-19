@@ -407,8 +407,48 @@ nav a.active {
 }
 .vehicle-info {
     padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85px; /* Altura fija para la caja de texto garantizando simetría */
 }
 
+.vehicle-info {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 110px; /* Un poco más alto para dar margen si el título envuelve */
+}
+
+/* PRIMERA LÍNEA: MARCA Y MODELO (No se corta, fluye libre) */
+.vehicle-info h4 {
+    margin: 0 0 6px 0;
+    color: var(--secondary-color);
+    font-size: 1.15em;
+    font-weight: 700;
+    line-height: 1.2;
+    width: 100%;
+    /* Quitamos totalmente el white-space: nowrap para que no se corte */
+}
+
+/* SEGUNDA LÍNEA: VERSIÓN Y AÑO (Inquebrantable, el año no se baja) */
+.vehicle-info p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #555;
+    font-weight: 500;
+    width: 100%;
+    
+    /* Forzamos a que se mantenga en una sola línea pase lo que pase */
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; /* Si la versión es muy larga, usa '...' antes de empujar al año */
+}
 /* MARCAS */
 .brands {
     padding: 20px 0;
