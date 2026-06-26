@@ -1,17 +1,4 @@
 [
-
-{
-    "id": "peugeot2008_2",
-    "titulo": "Peugeot",
-    "marca": "Peugeot",
-    "modelo": "2008",
-    "anio": 2018,
-    "combustible": "Nafta",
-    "transmision": "Automático",
-    "color": "Negro",
-    "imagen": "img/peugeot2008.png",
-    "link_wa": "https://wa.me/5491149919122"
-  },
   {
     "id": "citroen_3",
     "titulo": "Citroën ",
@@ -147,7 +134,81 @@
     "Kilometraje": "88.900 km",
     "imagen": "img/hondaHR.png",
     "link_wa": "https://wa.me/5491149919122"
+  },
+    {
+    "id": "peugeot208",
+    "titulo": " Peogeot",
+    "marca": "Peugeot",
+    "modelo": "208 1.6 Feline",
+    "Puertas":"5 ",
+    "color": "Blanco",
+    "combustible": "Nafta",
+    "transmision": "Manual",
+    "anio": 2019,
+    "Tipo de Carrocería": "Hatchback",
+    "Kilometraje": "92.800 km",
+    "imagen": "img/peugeot208.jpg",
+    "link_wa": "https://wa.me/5491149919122"
+  },
+    {
+    "id": "chevvroletCruz",
+    "titulo": " Chevrolet",
+    "marca": "Chevrolet",
+    "modelo": "Cruze 1.4 TURBO LTZ",
+    "Puertas":"5 ",
+    "color": "Blanco",
+    "combustible": "Nafta",
+    "transmision": "Manual",
+    "anio": 2017,
+    "Tipo de Carrocería": "Hatchback",
+    "Kilometraje": "66.200 km",
+    "imagen": "img/chevrolet-cruz.png",
+    "link_wa": "https://wa.me/5491149919122"
+  },
+  {
+    "id": "vw_suran",
+    "titulo": "Volkswagen Suran 1.6 Trendline 2013",
+    "marca": "Volkswagen",
+    "modelo": "Suran 1.6 Trendline 2013",
+    "Puertas": "5",
+    "color": "Gris",
+    "combustible": "Nafta",
+    "transmision": "Manual",
+    "anio": 2013,
+    "Tipo de Carrocería": "Rural",
+    "Kilometraje": "115.391 km",
+    "imagen": "img/suran.png",
+    "link_wa": "https://wa.me/5491149919122"
+  },
+    {
+    "id": "vw_amarok",
+    "titulo": "Volkswagen Amarok 3.0 V6 Comfortline",
+    "marca": "Volkswagen",
+    "modelo": "Amarok 3.0 V6 Comfortline",
+    "Puertas": "4",
+    "color": "Azul",
+    "combustible": "Diésel",
+    "transmision": "Automático",
+    "anio": 2023,
+    "Tipo de Carrocería": "Pick-up ",
+    "Kilometraje": "92.000 km",
+    "imagen": "img/amarok.png",
+    "link_wa": "https://wa.me/5491149919122"
+  },
+   {
+    "id": "chevrolet_sín",
+    "titulo": "Chevrolet SPIN 1.8 N LT M/T0 KM SIN RODAR",
+    "marca": "Chevrolet",
+    "modelo": "SPIN 1.8 N LT M/T0 KM SIN RODAR",
+    "Puertas": "5",
+    "color": "Negro",
+    "combustible": "Nafta/GNC",
+    "transmision": "Manual",
+    "anio": 2023,
+    "Tipo de Carrocería": "MPV",
+    "Kilometraje": "Patentado 2026 sin Rodar",
+    "imagen": "img/chevrolet_spin.png",
+    "link_wa": "https://wa.me/5491149919122"
   }
-
 
 ]
